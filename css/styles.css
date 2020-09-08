@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.heading {
+    font-weight: 100;
+}
+
+.email,
+.myButton {
+    border-radius: 30px;
+    padding: 20px;
+    outline: 0;
+    width: 100%;
+}
+
+.myButton:hover {
+    background-color: hsl(223, 100%, 88%);
+}
+
+.email {
+    border: 1px solid #dadcdd;
+}
+
+.email-input.success input {
+    border-color: #2ecc71;
+}
+
+.email-input.error input {
+    border-color: #e74c3c;
+}
+
+::placeholder {
+    color: #dadcdd;
+}
+
+.notify-section,
+.image {
+    margin: 10px 0;
+}
+
+.btn {
+    margin: 10px 0;
+}
+
+.myButton {
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+}
+
+.dashboard-img {
+    width: 100%;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-media-icons>li {
+    margin: 0 20px;
+    border: 1px solid #dadcdd;
+    padding: 10px;
+    border-radius: 100%;
+    width: 40px;
+    height: auto;
+    text-align: center;
+}
+
+.social-media-icons>li:hover {
+    background-color: hsl(223, 87%, 63%);
+}
+
+.fab:hover {
+    color: white;
+}
+
+.fab {
+    color: hsl(223, 87%, 63%);
+}
+
+@media only screen and (min-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        text-align: center;
+        margin: 30px 200px;
+    }
+    .logo-container {
+        margin: 20px 0 30px 0;
+    }
+    .heading {
+        font-weight: 100;
+    }
+    .soon {
+        font-weight: 700;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 50% 14%;
+        grid-column-gap: 50px;
+        grid-row: auto;
+        justify-content: center;
+    }
+    .error-text {
+        color: red;
+    }
+    .email,
+    .myButton {
+        border-radius: 30px;
+        padding: 20px;
+        outline: 0;
+        width: 100%;
+    }
+    .btn {
+        grid-column: 2/3;
+        margin: 0;
+    }
+    .email-input,
+    small {
+        grid-column: 1/2;
+    }
+    small {
+        justify-self: start;
+    }
+    .email {
+        border: 1px solid #dadcdd;
+    }
+     ::placeholder {
+        color: hsl(0, 0%, 59%);
+    }
+    .notify-section,
+    .image {
+        margin: 10px 0 100px 0;
+    }
+    .myButton {
+        color: white;
+        background-color: hsl(223, 87%, 63%);
+        border: none;
+        margin: 0;
+        -webkit-box-shadow: 3px 16px 29px -13px rgba(140, 205, 255, 1);
+        -moz-box-shadow: 3px 16px 29px -13px rgba(140, 205, 255, 1);
+        box-shadow: 3px 16px 29px -13px rgba(140, 205, 255, 1);
+    }
+    .dashboard-img {
+        width: 100%;
+    }
+}
